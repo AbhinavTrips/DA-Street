@@ -1,0 +1,715 @@
+﻿/*-----------------------------------------------------------------------------------
+
+	Template Name: Envo
+	Template URI: http://www.deliciousthemes.com
+	Description: A Coming Soon Template
+	Author: Madalin Tudose
+	Author URI: http://www.deliciousthemes.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+	
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+-----------------------------------------------------------------------------------
+
+	1.	CSS Reset & Clearfix
+	2.	Document Setup (body, common classes, structure etc)
+	3.	Main Content Styles
+		3.1. Countdown
+		3.2. Contact Form & Subscribe Form
+		3.3. Tabs
+		3.4. Progress Bar
+		3.5. Social Links
+		3.6. Twitter Feed - https://github.com/webandy/jquery-tweets
+	4.	Tipsy Plugin - https://github.com/jaz303/tipsy
+
+-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	1.	CSS Reset & Clearfix - http://meyerweb.com/eric/tools/css/reset/
+/*-----------------------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+label{
+	position:absolute;
+	left:-9999px;
+}
+
+input,textarea {
+	font: 12px/20px Helvetica, Arial, sans-serif;	
+	font:inherit;
+	resize:none;
+}
+
+[placeholder]:active,
+[placeholder]:focus{
+	cursor:text;
+	color:#767676;
+}
+
+.clear {
+	clear:both;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Document Setup (body, common classes, structure etc)
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/lobster/Lobster_1.3-webfont.eot');
+    src: url('fonts/lobster/Lobster_1.3-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lobster/Lobster_1.3-webfont.woff') format('woff'),
+         url('fonts/lobster/Lobster_1.3-webfont.ttf') format('truetype'),
+         url('fonts/lobster/Lobster_1.3-webfont.svg#Lobster13Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font: 14px/20px Helvetica, Arial, sans-serif;
+	background:url(images/bg.png) repeat scroll 0 0;
+	margin:0;
+	padding:0;
+	color:#E5E5E5;
+}
+
+.centered {
+	width:580px;
+	margin:0 auto;
+	padding:0;
+}
+
+a {
+	text-decoration:none;
+	color:#81aac2;
+}
+
+a:focus , a:link, a:active {
+	outline:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+p {
+	margin-bottom:15px;
+}
+
+p.center {
+	text-align:center;
+}
+
+a.logo {
+	text-align:center;
+	display:block;
+	margin:0 0 75px 0;
+}
+
+h1{
+	font-size:18px;
+	line-height:26px;
+	text-align:center;
+	font-weight:normal;
+	position:relative;
+	margin-top:5px;
+	color:#fff;
+}
+
+h1 span {
+	background:#89b0c7;
+	padding:3px 10px 5px;
+	display:inline-block;
+}
+
+h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:24px;
+	line-height:30px;
+	font-weight:normal;
+	position:relative;
+}
+
+h3 {
+	font-size:18px;
+	text-align:center;
+	font-weight:normal;
+	color:#767676;
+	text-shadow:1px 1px 0 #f9f9f9;		
+	margin-bottom:10px;
+}
+
+h4 {
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+
+#topfooter {
+	background:#ececec;
+	position:relative;
+	overflow:hidden;
+	padding:70px 0 140px;
+	color:#717171;
+	border-top:1px solid #e0f2fc;
+	border-bottom:1px solid #e0f2fc;
+}
+
+.borders {
+	width:100%;
+	height:2px;
+	background:url(images/border.png) repeat-x scroll;
+}
+.bottom {
+	margin-top:1px;
+}
+
+.bottom-shadow {
+	background:url(images/footer-bottom-shadow.png) repeat-x;
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height:6px;
+	text-indent: -9999px;
+}
+
+.top-shadow {
+	background:url(images/footer-top-shadow.png) repeat-x;
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:6px;
+	text-indent: -9999px;
+}
+
+#topfooter p {
+	font-size:13px;
+	margin-bottom:15px;
+}
+
+#topfooter .last {
+	margin-right:0px;
+}
+
+#topfooter h2 {
+	color:#fff;
+	margin-bottom:25px;
+}	
+
+#bottomfooter {
+	background:url(images/bg.png) repeat scroll 0 0;
+	padding:25px 0 20px;
+	overflow:hidden;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3.	Main Content Styles
+/*-----------------------------------------------------------------------------------*/
+
+	/*----- 3.1. Countdown -----*/
+
+#countdown {
+	float:left;
+	padding:0;
+	position:relative;
+	width:700px;
+	margin-left:-40px;
+}
+
+.hasCountdown {
+	height:155px;
+	margin-bottom:100px;
+	margin-top:70px;
+}
+
+.item {
+	float:left;
+	text-align:center;
+	margin:0 40px;
+	width:85px;
+	position:relative;
+}
+
+.item .lines {
+	position:absolute;
+	background:url(images/lines.png) no-repeat scroll 0 0;
+	display:block;
+	width:12px;
+	height:1px;
+	right:-45px;
+	bottom:75px;
+}
+
+.item span {
+	font-size:14px;
+	clear:both;
+	color:#fff;
+	width:85px;
+	display:inline-block;
+	text-transform:lowercase;
+	padding: 0px 0 1px;
+}
+
+.item span.days {
+	background:#96abb7;
+}
+
+.item span.hours {
+	background:#a4c5a0;
+}
+
+.item span.minutes {
+	background:#deb5bb;
+}
+
+.item span.seconds {
+	background:#e7ba93;
+}
+
+.item p {
+	font-family: 'Lobster', Lobster, Helvetica, Arial, sans-serif;
+	text-align:center;
+	margin-bottom:17px;
+	font-size:76px;
+	height:95px;
+	line-height:110px;
+	text-shadow: 2px 2px 1px #c8d7e0;
+	color:#ffffff;
+}
+
+.one-half { 
+	width: 48%; 
+}
+
+.one-half  {
+	position: relative;
+	margin-right: 4%;
+	float: left;
+}
+
+.last {
+	margin-right: 0!important;
+	clear: right;
+}
+
+
+	/*----- 3.2. Contact Form & Subscribe Form-----*/
+	
+#subscribe {
+	width:500px;
+	display:block;
+	padding-top:10px;
+}	
+
+form#cform {
+	position:relative;
+	float:left;
+	margin:0;
+	display:block;
+	background:#f8f8f8;
+	border:1px solid #e2e5e5;
+	padding:10px;
+}
+
+form#subscribeform {
+	position:relative;
+	float:left;
+	margin:10px 0 20px 15px;
+	display:block;
+	background:#f8f8f8;
+	border:1px solid #e2e5e5;
+	padding:10px;
+}
+
+.subscribetext {
+	margin-top:15px;
+}
+
+input#subemail {
+	float:left;
+	background:#fff;
+	border:0 none;
+	font-size:12px;
+	width:300px;
+	height:14px;
+	line-height:14px;
+	padding:10px 20px;
+	border:1px solid #e1e1e1;
+}
+
+input#subsubmit {
+	float:left;
+	margin-left:10px;
+	width:100px;
+	height:34px;
+	font-family: Lobster, 'Lobster', Helvetica, Arial;
+	color:#fff;
+	font-size:18px;
+	cursor:pointer;
+	box-shadow:inset 0px 1px 0px #b0cad9;
+	text-shadow: 1px 1px 0px #6e8d9f;
+	background:#89b0c7;
+	border:1px solid #79909e;
+}
+
+input#subsubmit:hover {
+	background:#85a8be;
+}
+
+#message, #mesaj { 
+	margin: 0; padding: 0; 
+}
+
+input#name, input#email  {
+	margin-bottom:10px;
+	float:left;
+	border:0 none;
+	font-size:12px;
+	width:200px;
+	height:14px;
+	line-height:14px;
+	padding:10px 20px;
+	background:#fff;
+	border:1px solid #e1e1e1;
+}
+
+input#submit {
+	float:right;
+	background:#9fa8ae;
+	border:0 none;
+	width:80px;
+	height:34px;
+	font-family: Lobster, 'Lobster', Helvetica, Arial;
+	color:#fff;
+	font-size:18px;
+	cursor:pointer;
+	box-shadow:inset 0px 1px 0px #b0cad9;
+	text-shadow: 1px 1px 0px #6e8d9f;
+	background:#89b0c7;
+	border:1px solid #79909e;
+}
+
+input#submit:hover {
+	background:#85a8be;
+}
+
+textarea#comments {
+	width:200px;
+	height:80px;
+	padding:20px 20px;
+	margin-bottom:10px;
+	font-size:12px;	
+	float:left;
+	background:#fff;
+	border:1px solid #e1e1e1;
+}
+
+.contact-loader {
+	position:relative;
+	float: right;
+	margin-top: 14px;	
+	margin-right:10px;
+}
+
+.subscribe-loader {
+	position: absolute;
+	right: 130px;
+	top: 21px;
+}
+
+.error_message {
+	text-align:center;
+	color:#ce4900;
+	padding:10px 0;
+	font-size:12px;
+}
+
+.separator {
+	width:100%;
+	height:1px;
+	border-top:1px dashed #e5e5e5;
+	clear:both;
+	padding-bottom:15px;
+}
+
+#success_page {
+	text-align:left;
+	padding:10px 0;
+}
+
+	/*----- 3.3. Tabs -----*/
+
+.tabs-wrapper { 
+	width: 100%;
+	min-height:240px;
+ }
+ 
+.tab-item {
+	clear:both;
+	overflow:hidden;
+	padding:15px 0;
+	border-bottom:1px solid #dedede;
+}
+
+.tabs-container {
+	float:left;
+	position:relative;
+	display:block;
+	width:100%;
+}
+
+li.last-item {
+	border-bottom:0 none;
+}
+
+
+.tabs-wrapper .tab-content { 
+	background:#fff; 
+	box-shadow:2px 2px 2px #dedede;
+	padding:50px 40px 40px;
+	overflow:hidden; 
+}
+
+ul.tabs {
+	float: left; 
+	margin-left:1px;
+	height: 42px; 
+	width: 100%; 
+	padding-left: 0 !important; 
+	margin-bottom: 0 !important;
+}
+
+ul.tabs li { 
+	float: left; 
+	padding-left: 0 !important; 
+	overflow: hidden; 
+	padding-bottom: 0; 
+	position: relative; 
+	text-align:center;
+	background:url(images/inactive-tab.png) no-repeat scroll right bottom;
+	outline:none;
+}
+
+ul.tabs li a { 
+	height: 42px; 
+	line-height: 42px; 
+	text-decoration:none; 
+	font-size:14px; 
+	font-weight:bold;
+	color: #8197a4; 
+	display: block; 
+	padding: 0 25px; 
+	outline:none;
+}
+
+ul.tabs li a:hover { 
+	color:#697a84;
+}
+
+ul.tabs li.active a:hover {
+	color:#798a94;
+}
+
+ul.tabs li.active, ul.tabs li.active a:hover  { 
+	background: #fff !important; 		
+	box-shadow:1px -1px 2px #dedede;
+
+}
+ul.tabs li.active {
+	margin-left:-1px;
+}
+	/*----- 3.4. Progress Bar -----*/
+
+#progress-bar {
+    background: #fff;
+    height: 10px;
+    position: relative;
+    width: 580px;
+	clear:both;
+	margin:0 0 70px;
+	box-shadow:1px 1px 1px #ccc;
+}
+
+#bar {
+    background: #89b0c7;
+    height: 10px;
+    width: 0;
+}
+
+#percent-tooltip {
+    background: url("images/tooltip.png") no-repeat scroll 0 0 transparent;
+    display: none;
+    position: absolute;
+	color:#586b76;
+    top: -40px;
+	width:44px;
+	height:33px;
+	padding: 3px 0 0 9px;
+	font-size:12px;
+}
+
+	/*----- 3.5. Social Links -----*/
+	
+ul.social {
+	position:relative;
+	text-align:center;
+}
+
+ul.social li {
+	display:inline;
+	text-align:center;
+}
+
+ul.social li a {
+	width:36px;
+	height:36px;
+	display:inline-block;
+	margin:0 14px;	
+}
+
+@-moz-document url-prefix() { ul.social li a  { display: -moz-inline-stack;  } } /* Firefox 2 Hack for display:inline-block */ 
+
+li a.facebook {
+	background:url(images/social/facebook.png) no-repeat scroll center center;
+}
+li a.rss {
+	background:url(images/social/rss.png) no-repeat scroll center center;
+}
+li a.yahoo {
+	background:url(images/social/yahoo.png) no-repeat scroll center center;
+}
+li a.linkedin {
+	background:url(images/social/linkedin.png) no-repeat scroll center center;
+}
+li a.twitter {
+	background:url(images/social/twitter.png) no-repeat scroll center center;
+}
+li a.skype {
+	background:url(images/social/skype.png) no-repeat scroll center center;
+}
+li a.google {
+	background:url(images/social/google.png) no-repeat scroll center center;
+}
+li a.dribbble {
+	background:url(images/social/dribbble.png) no-repeat scroll center center;
+}
+li a.flickr {
+	background:url(images/social/flickr.png) no-repeat scroll center center;
+}
+li a.vimeo {
+	background:url(images/social/vimeo.png) no-repeat scroll center center;
+}
+li a.forrst {
+	background:url(images/social/forrst.png) no-repeat scroll center center;
+}
+
+
+	/*----- 3.6. Twitter Feed -----*/
+	
+#twitter {
+	position: relative;
+	font-weight: normal;
+	color: #9a9898;
+	clear:both;
+}
+
+#twitter li {
+	top: 0;
+	left: 0;
+	margin:0;
+	position: absolute;
+	display: none;
+	width: 100%;
+	text-align: center;		
+	margin-top:50px;
+	font-size:12px;
+}
+
+#twitter .tweet-image {
+	background: url(images/twitter.png) no-repeat scroll 0 1px;
+    padding-left: 30px;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	4.	Tipsy Plugin - https://github.com/jaz303/tipsy
+/*-----------------------------------------------------------------------------------*/
+
+
+.tipsy { font-size: 12px; position: absolute; padding: 10px 8px; z-index: 100000; }
+  .tipsy-inner { background-color: #fff; color: #666666; max-width: 200px; padding: 1px 10px 0 10px; text-align: center; }
+
+  /* Rounded corners */
+  .tipsy-inner { border-radius: 3px; }
+  
+  .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #fff;top:31px}
+  
+  /* Rules to colour arrows */
+  .tipsy-arrow-n { border-bottom-color: #fff; }
+  .tipsy-arrow-s { border-top-color: #fff; }
+  .tipsy-arrow-e { border-left-color: #fff; }
+  .tipsy-arrow-w { border-right-color: #fff; }
+  
+	.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+  .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+  .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+  .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }

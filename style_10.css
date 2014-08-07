@@ -1,0 +1,436 @@
+﻿body{font:11px Arial; color:#303030; background:#1c8ab3 url(http://img1.moneycontrol.com/images/moneybhai_2010/moneybhai_bg.jpg) no-repeat center top; }
+*{padding:0px; margin:0px;}
+a img{border:none;}a{text-decoration:none;}a:hover{text-decoration:underline;}
+ul, li {padding:0; margin:0; list-style:none;}
+.FL{float:left;}.FR{float:right;}.FN{float:none;}.CL{clear:both;} .CL1{clear:both; font-size:0px; line-height:0px; height:0px;}.disN{display:none;}.disB{display:block;} .CTR { text-align:center }  .fwn {font-weight:normal;}
+.no_brd { border:none !important }:focus {outline: 0;}
+.UC{ text-transform:uppercase}
+
+/*     Float containers fix 
+=============================== */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+.topnav{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/menu_bg.gif) repeat-x left top;}
+.main {width:1000px; margin:0 auto;}
+.main_cnt {width:995px; background-color:#fff; .overflow:hidden}
+.MA5{margin:5px;}.MA10{margin:10px;}
+.MT3{margin-top:3px;}.MT5{margin-top:5px;}.MT7{margin-top:7px;}.MT10{margin-top:10px;}.MT12{margin-top:12px;}.MT15{margin-top:15px;}.MT20{margin-top:20px;} .MT25{margin-top:25px;} .MT35 { margin-top:35px; } .MT45 { margin-top:45px; } .MT70{ margin-top:70px;}
+.MR3{ margin-right:3px;}.MR5{margin-right:5px;}.MR10{margin-right:10px;}.MR15{margin-right:15px;}.MR20{margin-right:20px;}.MR25{ margin-right:25px;}
+.MB3{margin-bottom:3px;}.MB5{margin-bottom:5px;}.MB10{margin-bottom:10px;}.MB15{margin-bottom:15px;}.MB20{ margin-bottom:20px;}
+.ML2{margin-left:2px;}.ML3{margin-left:3px;}.ML5{margin-left:5px;}.ML7{margin-left:7px;}.ML10{margin-left:10px;}.ML15{margin-left:15px;}.ML20{margin-left:20px;} .ML25{margin-left:25px;}.ML40{margin-left:40px;}.ML45{margin-left:45px;}
+
+.PA3{padding:3px;}.PA5{padding:5px;}.PA7{padding:7px;}.PA10{padding:10px;} .PA15 { padding:15px; } .PA20 { padding:20px; }
+.PT2{padding-top:2px;}.PT3{padding-top:3px;}.PT4{ padding-top:4px;}.PT5{padding-top:5px;}.PT7{padding-top:7px;}.PT8{padding-top:8px;}.PT10{padding-top:10px;}.PT12{padding-top:12px;}.PT15{padding-top:15px;}.PT20{padding-top:20px;}.PT25{padding-top:25px;}.PT30{padding-top:30px;} .PT35{padding-top:35px;}
+.PR3{padding-right:3px;}.PR5{padding-right:5px;}.PR7{padding-right:7px;} .PR8{padding-right:8px;} .PR10{padding-right:10px;}.PR15{padding-right:15px;}.PR20{padding-right:20px;}.PR25{padding-right:25px;}.PR30{padding-right:30px;}.PR40{padding-right:40px;} .PR35 { padding-right:35px; }
+.PB3{padding-bottom:3px;}.PB5{padding-bottom:5px;}.PB7{padding-bottom:7px;}.PB10{padding-bottom:10px;}.PB15{padding-bottom:15px;}.PB20{padding-bottom:20px;}.PB25{padding-bottom:25px;}
+.PL3{padding-left:3px;}.PL5{padding-left:5px;}.PL7{padding-left:7px;} .PL8{padding-left:8px;} .PL9{padding-left:9px;}.PL10{padding-left:10px;}.PL15{padding-left:15px;}.PL20{padding-left:20px;}.PL25{ padding-left:25px;}.PL30{padding-left:30px;}.PL40{ padding-left:40px;}
+
+.header{ position:relative}
+.logo{ position:absolute; left:0; top:130px;}
+.menu_nav {background:url(menu_bg.jpg) repeat-x; height:36px;}
+.menu_nav ul li { list-style:none; float:left; display:block; margin-left:3px; }
+.menu_nav ul li a{ padding:8px 8px 0px 8px; font:bold 12px Arial; color:#FFF; text-decoration:none;  display:block; float:left; height:22px;}
+.menu_nav ul li a:hover{ text-decoration:none; background-color:#f8f8f8; color:#000; margin-top:1px;}
+.menu_nav ul li a.active{ text-decoration:none;background-color:#f8f8f8; color:#000; margin-top:1px;}
+.menu_navL {/*background:url(http://img1.moneycontrol.com/images/moneybhai_2010/menu_div.jpg) no-repeat right 7px;*/ float:left; width:842px;}
+
+.banner{ width:670px; height:105px; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/banmid.gif) repeat-x; float:left; margin:5px 0 0 165px; display:inline}
+.banner .lt{ width:18px; height:105px; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/banlt.gif) no-repeat left top; float:left}
+.banner .rt{ width:18px; height:105px; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/banrt.gif) no-repeat left top; float:right}
+.banner .md{ float:left; width:634px; height:97px; padding-top:8px;}
+
+.bans{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/sponsor_box.gif) no-repeat; width:230px; height:60px; padding:6px 10px}
+.mbann{ background:#fff}
+.mbann .lt{width:10px; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/money_menu_bg.jpg) no-repeat left top; height:20px; float:left}
+.mbann .rt{width:10px; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/money_menu_bg.jpg) no-repeat right top; height:20px; float:right}
+.mbann .md{ float:left; padding:15px 8px 0 7px;}
+
+.sk_bl {color:#03c4f9; font-family:Arial; font-size:12px; font-style:italic; text-decoration:none;}
+
+h1 {font-family:Arial; font-size:25px; color:#000; font-weight:bold; text-decoration:none;}
+h2 {font-family:Arial; font-size:20px; color:#000; font-weight:bold; text-decoration:none; padding-bottom:5px;}
+.bdr_tp5 {border-top:3px solid #000; margin-top:2px; margin-bottom:3px;}
+.BD{ font-weight:700;}
+
+.b_10{font:10px/15px arial; color:#000; text-decoration:none;}
+.b_11{font:11px/15px arial; color:#000; text-decoration:none;}
+.b_12{font:12px/16px arial; color:#000; text-decoration:none;}
+.b_13{font:13px/18px arial; color:#000; text-decoration:none;}
+.b_14{font:14px/18px arial; color:#000; text-decoration:none;}
+.b_15{font:15px/18px arial; color:#000; text-decoration:none;}
+.b_16{font:bold 16px/20px arial; color:#000; text-decoration:none;}
+.b_17{font:bold 17px/20px arial; color:#000;}
+.b_18{font:18px arial; color:#000}
+.b_20{font:bold 20px/24px arial; color:#000; text-decoration:none;}
+.b_22{font:bold 22px/24px arial; color:#000; text-decoration:none;}
+.b_25{font:bold 25px/24px arial; color:#000; text-decoration:none;}
+.b_30{font:bold 30px/24px Helvetica, sans-serif arial; color:#000; text-decoration:none;}
+
+
+.b_13{font:13px arial; color:#000;}
+
+.wh_10{font:10px arial; color:#fff; }
+.wh_11{font:11px arial; color:#fff; }
+.wh_21{font:21px arial; color:#fff; }
+
+.gD_10{font:10px/15px arial; color:#4d4d4d; text-decoration:none;}
+.gD_11{font:11px/15px arial; color:#5c5c5c; text-decoration:none;}
+.gD_12{font:12px/16px arial; color:#333333; text-decoration:none;}
+.gD_20{font:20px/16px arial; color:#333333; text-decoration:none;}
+
+.gM_10{font:10px arial; color:#494949}
+.gL_10{font:10px/15px arial; color:#676a6b;}
+.gL_11{font:11px/15px arial; color:#646464; text-decoration:none;}
+.gM_12{font:12px arial; color:#494949}
+.gM_2_12{font:12px/17px arial; color:#666}
+.gL_12{font:12px/16px arial; color:#646464; text-decoration:none;}
+.gL_13{font:13px/16px arial; color:#646464; text-decoration:none;}
+.gL_14{font:14px/16px arial; color:#646464; text-decoration:none;}
+.gL_15{font:15px/16px arial; color:#646464; text-decoration:none;}
+
+.bl_10{font:10px/15px arial; color:#02536c; text-decoration:none;}
+.bl_11{font:11px/15px arial; color:#02536c; text-decoration:none;}
+.bl_12{font:12px/16px arial; color:#02536c; text-decoration:none;}
+.bl_13{font:13px/18px arial; color:#02536c; text-decoration:none;}
+.bl_14{font:14px/18px arial; color:#02536c; text-decoration:none;}
+.bl_15{font:15px/15px arial; color:#02536c; text-decoration:none;}
+
+.bl_12_1{font:12px/16px arial; color:#09568c; text-decoration:none;}
+
+.gr_14{font:14px/16px arial; color:#367d25; text-decoration:none;}
+.gr_20{font:20px/20px arial; color:#367d25; text-decoration:none;}
+.gr_11 {color:#367d25; font:11px/15px arial; text-decoration:none;}
+.gr_12{font:12px/16px arial; color:#2ab41e; text-decoration:none;}
+.gr_15{font:15px/16px arial; color:#367d25; text-decoration:none;}
+.grl_18{font:18px/16px arial; color:#36af00;}
+
+.gr_15_1{font:15px arial; color:#4d9401;}
+.gr_20_1{font:20px arial; color:#4d9401;}
+.gr_25_1{font:25px arial; color:#4d9401;}
+
+.gr_12_2{font:12px arial; color:#478301;}
+
+
+.grl_16{font:16px/16px arial; color:#54e315; text-decoration:none;}
+.r_15{font:15px/16px arial; color:#cc0000; text-decoration:none;}
+.r_12{font:12px/16px arial; color:#cc0000; text-decoration:none;}
+.r_15{font:15px/16px arial; color:#cc0000; text-decoration:none;}
+
+.r_11_1{font:11px arial; color:#d20203; text-decoration:none;}
+.r_15_1{font:15px arial; color:#d20203; text-decoration:none;}
+
+.red_10{font:10px/16px arial; color:#dd0a00; text-decoration:none;}
+.red_12{font:12px/16px arial; color:#dd0a00; text-decoration:none;}
+
+.gr_10{font:10px/16px arial; color:#07ad04; text-decoration:none;}
+.gr_12{font:12px/16px arial; color:#07ad04; text-decoration:none;}
+
+.w_10{font:10px arial; color:#fff}.w_12{font:12px arial; color:#fff}.w_13{font:13px arial; color:#fff}
+.w_14{font:14px arial; color:#fff}
+.w_21{font:21px/23px arial; color:#fff}
+.we_12{font:12px arial; color:#c3c19e}
+
+.be_12{font:12px arial; color:#a0bbc4;}
+
+.r_12_1 {font:12px/16px arial; color:#c71c44; text-decoration:none;}
+
+.r_12_2 {font:12px/16px arial; color:#d31111; text-decoration:none;}
+
+.mybhai_menu{ margin-left:180px;}
+.mybhai_menu ul li { list-style:none; float:left; display:block;}
+.mybhai_menu ul li a{ float:left; padding-right:7px; font: bold 16px Arial; height:36px; color:#fff; text-decoration:none; text-transform:uppercase; cursor:pointer; letter-spacing:-1px}
+.mybhai_menu ul li a:hover {text-decoration:none; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/money_menu_bg.jpg) no-repeat right top; color:#000;}
+.mybhai_menu ul li a span{padding-left:7px; float:left; padding-top:10px; height:26px; }
+.mybhai_menu ul li a:hover span{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/money_menu_bg.jpg) no-repeat left top; color:#000;}
+.mybhai_menu ul li a.active {text-decoration:none; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/money_menu_bg.jpg) no-repeat right top; color:#000;}
+.mybhai_menu ul li a.active span{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/money_menu_bg.jpg) no-repeat left top; color:#000;}
+
+.blbx{ float:left; padding:15px;width:460px; background-color:#d7faff}
+.imgctr{ display:table-cell; .display:inline-block}
+
+.more {background: no-repeat right center url(http://img1.moneycontrol.com/images/moneybhai_2010/more_arw.gif); padding-right:10px; display:inline;}
+.more1 {background: no-repeat left center url(http://img1.moneycontrol.com/images/moneybhai_2010/more_arw.gif); padding-left:10px; display:inline}
+.lnk {background: no-repeat right center url(http://img1.moneycontrol.com/images/moneybhai_2010/sepline.jpg); padding-right:10px; padding-left:5px; display:inline ; line-height:24px;}
+
+.tbldata{border-spacing:0; border-collapse:collapse}
+.tbldata th{border-bottom:1px solid #7fc68e;border-top:1px solid #7fc68e; background-color:#c3f7a9; padding:9px 5px; font:bold 12px Arial; color:#000}
+.tbldata td{border-bottom:1px solid #c1e1e5; font:15px Arial; padding:4px 5px;}
+.tbldata td.no_brd{ border:0}
+.tbldata tr.odd{background-color:#FFF}
+
+.bgorg{ background:url(http://img1.moneycontrol.com/images/moneybhai_2010/bgorg.gif) no-repeat; width:48px; height:45px; text-align:center; padding-top:18px; margin-right:1px;}
+.dot{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/dot.gif) no-repeat center; width:14px; height:8px; text-align:center; margin-top:50px;  }
+.bdrt51{ background-color:#000; height:5px; line-height:0px; font-size:0px;}
+.famedata{border-spacing:0;}
+.famedata th{padding:5px 10px; font:bold 12px Arial; color:#befb2d}
+.famedata td{border-bottom:1px solid #c2968c; padding:7px 10px;}
+.gr30{font:30px Arial; color:#befb2d}
+
+
+.gmenu ul li { list-style:none; float:left; display:block; margin-right:10px; }
+.gmenu ul li a { float:left; padding-right:10px; height:26px; color:#000; font:bold 12px/10px Arial; text-decoration:none; text-transform:uppercase; cursor:pointer; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu_normal.gif) no-repeat right top }
+.gmenu ul li a:hover { text-decoration:none; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu_hover.gif) no-repeat right top; color:#000; }
+.gmenu ul li a span { padding-left:10px; float:left; height:26px; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu_normal.gif) no-repeat left top }
+.gmenu ul li a:hover span { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu_hover.gif) no-repeat left top; color:#000; }
+.gmenu ul li a:hover span b { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gcen.gif) no-repeat center top; display:inline-block; height:21px; }
+.gmenu ul li a span b { padding-top:5px; display:inline-block; height:21px; .padding-top:6px;
+text-align:center }
+.gmenu ul li a.active { text-decoration:none; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu_hover.gif) no-repeat right top; color:#000 }
+.gmenu ul li a.active span { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu_hover.gif) no-repeat left top; color:#000; }
+.gmenu ul li a.active span b { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gcen.gif) no-repeat center top; display:inline-block; height:21px; }
+
+.gmenu1 ul li { list-style:none; float:left; display:block; margin-right:10px; }
+.gmenu1 ul li a { float:left; padding-right:10px; height:26px; color:#000; font:bold 10px/10px Arial; text-decoration:none; text-transform:uppercase; cursor:pointer; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/sld_gry.gif) no-repeat right top }
+.gmenu1 ul li a:hover { text-decoration:none; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/sld_select.gif) no-repeat right top; color:#000; }
+.gmenu1 ul li a span { padding-left:10px; float:left; height:26px; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/sld_gry.gif) no-repeat left top }
+.gmenu1 ul li a:hover span { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/sld_select.gif) no-repeat left top; color:#fff; }
+.gmenu1 ul li a:hover span b { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/sld_arw.gif) no-repeat center top; display:inline-block; height:28px; }
+.gmenu1 ul li a span b { padding-top:5px; display:inline-block; height:21px; .padding-top:6px;
+text-align:center }
+.gmenu1 ul li a.active { text-decoration:none; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/sld_select.gif) no-repeat right top; color:#fff }
+.gmenu1 ul li a.active span { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/sld_select.gif) no-repeat left top; color:#fff; }
+.gmenu1 ul li a.active span b { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/sld_arw.gif) no-repeat center top; display:inline-block; height:28px; }
+
+.list li{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/li_arw.gif) no-repeat left 10px; float:left; padding:9px 5px 8px 25px; font:13px Arial; color:#5c5c5c; border-bottom:3px solid #e7eedc;}
+.list li a{font:13px Arial; color:#5c5c5c; text-decoration:none;}
+.list li a:hover{text-decoration:underline;}
+
+
+.explore{display:block}
+.explore *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#276478}
+.explore1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #a2bcc4;
+  border-right:1px solid #a2bcc4;
+  background:#5d8a99}
+.explore2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #e9eff1;
+  border-right:1px solid #e9eff1;
+  background:#508191}
+.explore3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #508191;
+  border-right:1px solid #508191;}
+.explore4{
+  border-left:1px solid #a2bcc4;
+  border-right:1px solid #a2bcc4}
+.explore5{
+  border-left:1px solid #5d8a99;
+  border-right:1px solid #5d8a99}
+.explorefg{
+  background:#276478}
+  
+.stock_list li{ width:125px; display:block;}
+.stock_list li a span{ width:120px;  display:block; padding:7px 0 5px 5px;border-bottom:1px solid #b7b7b7;}
+.stock_list li a{ width:137px; height:28px;  font:11px Arial; color:#000; text-decoration:none; display:block; text-transform:uppercase; cursor:pointer }
+.stock_list li a:hover{ background:url(http://img1.moneycontrol.com/images/moneybhai_2010/hover.gif) no-repeat 0 0; color:#fff; text-decoration:none;}
+.stock_list li a:hover span{ background:url(http://img1.moneycontrol.com/images/moneybhai_2010/hover.gif) no-repeat 0 0; color:#fff; text-decoration:none; width:137px; border-bottom:0;}
+.stock_list li a.current span{ background:url(http://img1.moneycontrol.com/images/moneybhai_2010/hover.gif) no-repeat 0 0; color:#fff; text-decoration:none; border-bottom:0; width:137px; height:18px;}
+.lblbox{ padding:0px; width:325px; height:auto; float:right;background:#fff;}
+.tblstock{border-collapse:collapse; border-spacing:0; width:90%; float:right;}
+.tblstock th{ padding:5px 0; font-family:arial; font-size:12px; color:#000; font-weight:bold; }
+.tblstock td{ border-top:1px solid #e9e9e9; padding:5px 0;}
+
+.list1 li{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/li_arw.gif) no-repeat left 10px; float:left; padding:9px 5px 8px 25px; font:13px Arial; color:#5c5c5c; width:120px; display:inline;}
+.list1 li a{font:15px Arial; color:#000; text-decoration:none;}
+.list1 li a:hover{text-decoration:underline;}
+.srch_box{border:solid 1px #015a78; width:360px; background-color:#fff}
+.get_quo{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/bg_txt.jpg) repeat-x top left;  border:solid 1px #afafaf; width:130px;}
+.bgbl{background-color:#d7faff}
+.bggrn{background-color:#c3f7a9}
+.bggrnhead{ background:url(http://img1.moneycontrol.com/images/moneybhai_2010/bggrn.gif) repeat-x top; height:27px;}
+.quo_txt{border:0px; width:200px; font-weight:bold}
+.bortb{border-top:solid 1px #93c88e; border-bottom:solid 1px #93c88e;}
+
+.list2 li{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/arw_r_g.gif) no-repeat left 9px;  padding:5px 5px 5px 15px; font:15px Arial; color:#5c5c5c; display:block; border-bottom:solid 1px #e5e5e5}
+
+.list3 li{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/arw_r_g.gif) no-repeat left 5px;  padding:2px 5px 2px 15px; font:12px Arial; color:#747474; display:block; }
+.list4 li{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/arw_r_g.gif) no-repeat left 11px;  padding:8px 5px 2px 15px; font:12px Arial; color:#000; display:block; }
+
+table.tbldata1 tr td {border-bottom:solid 1px #d1d1d1;padding:8px 4px; }
+table.tbldata1 tr td a{font:12px Arial; color:#015a78;}
+table.tbldata1 tr td span{color:#999999; }
+
+table.tbldata2 tr th {font:bold 12px Arial; border-bottom:solid 1px #d1d1d1;border-top:solid 1px #fff; padding:8px 7px; background-color:#ebfcff; text-align:left}
+table.tbldata2 tr td {font:12px Arial; border-bottom:solid 1px #d1d1d1;border-top:solid 1px #fff; padding:8px 7px;  color:#7d7d7d;text-align:left}
+table.tbldata2 tr td a{font:12px Arial; color:#015a78;}
+table.tbldata2 tr td p{text-align:center}
+
+
+.borgl{border:solid 1px #d0d9e0;}
+.borgb{border-bottom:solid 1px #d0d9e0;background:url(http://img1.moneycontrol.com/images/moneybhai_2010/bgrm.gif) repeat-x left top; }
+.borgt{border-top:solid 1px #d0d9e0;}
+
+.song li{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/song_icon.gif) no-repeat left 6px; padding:5px 5px 5px 25px; font:12px Arial; color:#09568c; display:block; border-bottom:dotted 1px #e5e5e5; width:145px;}
+.song li a{font:12px Arial; color:#09568c; text-decoration:none;}
+.song li a:hover{text-decoration:underline;}
+.song li p a{font:11px Arial; color:#09568c; text-decoration:none;}
+.song li p a:hover{text-decoration:underline;}
+
+#space table tr td { padding:8px; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/bg_tbl.jpg) repeat-x left top; color:#000; font-size:12px;  } 
+#space table tr th { padding:12px 6px 6px 6px; color:#fff; font:15px arial; font-weight:bold; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/bg_tbl.jpg) repeat-x left top; background-color:#015b79;  } 
+#space table tr th span{font:13px arial; }
+.borgl1{border-bottom:solid 1px #e5e5e5;}
+.borbl5{border-bottom:solid 5px #d7faff;}
+
+#holdind table tr th {font:11px arial; color:#5c5c5c;}
+#holdind table tr td {font:13px arial; color:#5c5c5c; padding:5px 0px;}
+#holdind table tr td span {font:18px arial;}
+.grfbar{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/grf_bg.gif) no-repeat left top; height:17px; width:162px; float:left; }
+.grfbar p{ padding-top:2px; *padding-top:1px; padding-left:7px; font:11px/15px arial; color:#5c5c5c; font-weight:bold;}
+.wd73{ width:73px;}
+.bgbar{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/grf_rate.gif) repeat-x; height:17px; }
+
+.perform table tr td {padding:4px; color:#000; font-size:15px; border-bottom:solid 1px #e5e5e5; }
+.perform table tr td p{color:#dd0a00; font-size:13px;}
+.perform table tr td span{color:#5c5c5c; font-size:13px;}
+
+.trklist{height:100px; overflow:auto; width:355px;}
+.trklist table tr td {padding:4px; color:#000; font-size:15px; border-bottom:solid 1px #e5e5e5; }
+
+
+.bghed{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/bghed.gif) repeat-x; height:31px;}
+.container{width:965px;}
+.leftpnl{width:750px; float:left; padding-right:10px;}
+.rgtpnl{width:190px; padding-left:10px;}
+.borlft5{border-left:5px solid #000;}
+.borgnb{ border-bottom:solid 1px #93c88e}
+.borgnl{ border-left:solid 1px #93c88e}
+.UC{ text-transform:uppercase;}
+.txtreg{ border-top:1px solid #8f8f8f;border-bottom:1px solid #e4e4e4;border-left:1px solid #cecece;border-right:1px solid #cecece; background:#fff; padding:3px; width:250px;}
+
+.lgnbox{width:350px; margin: 10px 0px 0px 0px;}
+.lgnbox table tr td{ padding: 5px 0px;}
+.implbg{ width:254px; border:solid 1px #e2e2e2; background: url(http://img1.moneycontrol.com/images/moneybhai_2010/inplbg.jpg) repeat-x top; padding:8px; font:15px arial; color:#5c5c5c; }
+
+.brdb { border-bottom:1px solid #eaeaea;}
+.col1 { width:95px; float:left; padding-right:10px;}
+.tar { text-align:right;}.vam{vertical-align:middle; height:15px; width:15px}
+.bar { width:70px; height:5px; font-size:0; background:#c7c7c7;}
+.ybar { width:auto; height:5px; font-size:0; background: url(http://img1.moneycontrol.com/images/moneybhai_2010/ybar.gif) repeat-x; display:inline-block;}
+.grbar { width:auto; height:5px; font-size:0; background: url(http://img1.moneycontrol.com/images/moneybhai_2010/grbar.gif) repeat-x; display:inline-block;}
+.gbar { width:auto; height:5px; font-size:0; background: url(http://img1.moneycontrol.com/images/moneybhai_2010/gbar.gif) repeat-x; display:inline-block;}
+.rbar { width:auto; height:5px; font-size:0; background: url(http://img1.moneycontrol.com/images/moneybhai_2010/rbar.gif) repeat-x; display:inline-block;}
+.col2 { width:595px; float:left; padding-left:10px; border-left:2px solid #cbdde1;}
+.gL_14 { font:14px/14px arial; color:#666;}
+.r_11{ font: 11px arial; color:#ca0000;}
+.star_on { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/star_on.gif) no-repeat; width:10px; height:10px; font-size:0; float:left; margin-left:3px;}
+.star_off { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/star_off.gif) no-repeat; width:10px; height:10px; font-size:0; float:left; margin-left:3px;}
+
+.str_on { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/stron.gif) no-repeat; width:10px; height:10px; font-size:0; float:left; margin-left:3px;}
+.str_off { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/strof.gif) no-repeat; width:10px; height:10px; font-size:0; float:left; margin-left:3px;}
+
+.comment { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/comment.gif) no-repeat; display:inline-block; width:12px; height:12px; font-size:0;}
+.combl { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/comiconbl.gif) no-repeat; display:inline-block; width:11px; height:11px; font-size:0;}
+.gD_14 { font:14px/18px arial; color:#333;}
+.bdrblk4{border-top:4px solid #000;}
+.bggry{ background-color:#efefef;}
+.lh21{ line-height:21px;}
+.windata tr td { border-bottom:solid 1px #e5e5e5; padding:5px 5px; font:15px arial; color:#5c5c5c; }
+.windata tr th { border-bottom:solid 1px #93c88e;  padding:5px 5px; font:bold 12px arial; color:#000;}
+.bgbl{ background-color:#d7faff; cursor:pointer;}
+.bgbl table tr td{font:bold 30px arial; color:#000000}
+.bgwht{ background-color:#fff; cursor:pointer;}
+.bgwht table tr td{font:bold 30px arial;color:#999999}
+
+.pgnbtm { padding:3px; width:150px; font:18px Arial, Helvetica, sans-serif; }
+.pgnbtm ul { margin: 0; padding: 0; text-align: left; font-size: 18px; }
+.pgnbtm li { list-style-type: none; display: inline; padding-bottom: 1px; font-weight: bold;  }
+.pgnbtm a, .pgnbtm a:visited { padding: 3px 8px 3px 8px; text-decoration: none; color: #276478; background-color:#e9e9e9;  }
+.pgnbtm a:hover, .pgnbtm a:active { font:18px Arial;color: #fff; background-color: #276478; }
+.pgnbtm a.currentpage { background-color: #276478; font:18px Arial; color: #FFF !important;  cursor: default; }
+
+.prev{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/prearwbtn.gif) no-repeat left top; width:20px; height:29px; display:block;}
+.prev_active{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/prearwbtn_over.gif) no-repeat left top; width:20px; height:29px; display:block;}
+.nxt{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/nxtarwbtn.gif) no-repeat left top; width:20px; height:29px; display:block;}
+.nxt_active{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/nxtarwbtn_ove.gif) no-repeat left top; width:20px; height:29px; display:block;}
+.lnklft ul li{ margin:0; padding:0;}
+.lnklft ul li a{ padding:5px 0px 5px 10px; margin:0; background-color:#d7faff; font:bold 12px arial; color:#000; display:block; border-bottom:solid 1px #a7dfe7; border-top:solid 1px #fff;text-transform:uppercase; height:15px;}
+.lnklft ul li a:hover{background-color:#c3f7a9; text-decoration:none;}
+.listmenu{ background-color:#d7faff;border-bottom:solid 1px #a7dfe7; border-top:solid 1px #fff; }
+.listmenu li a{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/arw_r_g.gif) no-repeat left 5px;  padding:3px 5px 3px 15px; font:12px Arial; color:#566466; display:block; height:15px; }
+.expicon{ padding:10px 5px 3px 0px; font:12px Arial; color:#000; display:block; text-transform:uppercase;}
+.grboxrgt table tr th{ background:url(http://img1.moneycontrol.com/images/moneybhai_2010/grt_bg.gif) repeat-x bottom;  font:bold 12px arial; color:#000; padding:5px;}
+.grboxrgt table tr th{ padding:5px;}
+.grboxrgt1 table tr th{ background:url(http://img1.moneycontrol.com/images/moneybhai_2010/grt_bg.gif) repeat-x top;  font:bold 12px arial; color:#000;  height:32px; text-align:left; padding:0px 0px 0px 5px; text-transform:uppercase;}
+.grboxrgt1 table tr td{  font:12px arial; color:#000;  text-align:left; padding:5px ; }
+
+.gryhead{ background:url(http://img1.moneycontrol.com/images/moneybhai_2010/grt_bg.gif) repeat-x bottom;  font:bold 12px arial; color:#000; text-transform:uppercase;}
+
+.gmenu3 ul li { list-style:none; float:left; display:block; margin-right:7px; }
+.gmenu3 ul li a { float:left; padding-right:9px; height:26px; color:#646464; font:bold 11px/10px Arial; text-decoration:none; text-transform:uppercase; cursor:pointer; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu3_normal.gif) no-repeat right top }
+.gmenu3 ul li a:hover { text-decoration:none; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu3_hover.gif) no-repeat right top; color:#000; }
+.gmenu3 ul li a span { padding-left:9px; float:left; height:26px; background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu3_normal.gif) no-repeat left top }
+.gmenu3 ul li a:hover span {background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu3_hover.gif) no-repeat left top; color:#01506b; }
+.gmenu3 ul li a span b {padding-top:5px; display:inline-block; height:21px; text-align:center }
+.gmenu3 ul li a.active{ background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu3_hover.gif) no-repeat right top; color:#01506b; }
+.gmenu3 ul li a.active span { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/gmenu3_hover.gif) no-repeat left top; color:#01506b; }
+
+.grlgtbox table tr th{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/grnlgtbg.jpg) repeat-x left bottom; padding:6px; text-align:left; font:bold 13px arial; color:#000 }
+.grlgtbox table tr td{padding:6px; border-top:1px solid #e9e9e9;}
+.bort_b5{border-top:solid 5px #000;}
+.bort_w5{border-top:solid 5px #fff;}
+
+.rate { width:70px; height:15px; font-size:0; background: url(http://img1.moneycontrol.com/images/moneybhai_2010/barbgwht.jpg) repeat-x top;}
+.grate_bg { width:auto; height:15px; font-size:0; background: url(http://img1.moneycontrol.com/images/moneybhai_2010/grbarb.jpg) repeat-x; display:inline-block;}
+.rrate_bg { width:auto; height:15px; font-size:0; background: url(http://img1.moneycontrol.com/images/moneybhai_2010/redbar.jpg) repeat-x; display:inline-block;}
+.brate_bg { width:auto; height:15px; font-size:0; background: url(http://img1.moneycontrol.com/images/moneybhai_2010/blkbar.jpg) repeat-x; display:inline-block;}
+table .techchart tr td{ padding:6px 2px; border-bottom:solid 1px #e5e5e5; text-align:right;}
+
+table .techchart tr td span{color:#e80000; font-weight:bold;}
+table.tbl02 tr td{ padding:3px; font:bold 12px arial;color:#000;}
+table .techchart3 tr td{ padding:6px 2px; border-top:solid 1px #e5e5e5; }
+.wmsg{ width:237px; position:absolute; margin-left:113px; margin-top:60px; z-index:100;}
+.wmsg_box{width:224px; border:solid 1px #ffc974; background-color:#fffac0; margin-left:-1px; }
+.wmsg_arw{width:11px;background:url(http://img1.moneycontrol.com/images/moneybhai_2010/corbox.jpg) no-repeat right ; height:12px; margin-top:85px; z-index:1; position:relative;}
+
+.accordionrhs h3 {font:12px arial; color:#000;cursor:pointer;  height:22px; border:solid 1px #d1d1d1;  padding:4px 0px 0px 0px; margin:1px 0px;}
+.accordionrhs h3.active {font:12px arial; color:#000; border-left:solid 2px #015a78;border-right:solid 2px #015a78;border-top:solid 2px #015a78; padding:0px; margin:1px 0px; padding:3px 0px 0px 0px;}
+.accordionrhs strong { font-family:Arial; font-size:12px; text-decoration:none; display:block; width:754px; font-weight:normal; padding:6px; overflow:hidden; margin-top:-2px; border-left:2px solid #015a78;border-right:2px solid #015a78;border-bottom:2px solid #015a78;  }
+.visible_block1 {padding:7px; background:#fff url(images/btmbg.gif) no-repeat  left bottom; display:inline-block;}
+.accordionrhs h3 .arrow{ background:url(http://img1.moneycontrol.com/images/moneybhai_2010/arw_off.gif) no-repeat 0 0; width:13px; height:13px; margin:2px 2px 0 5px;}
+.accordionrhs h3.active .arrow { background:url(http://img1.moneycontrol.com/images/moneybhai_2010/arw_on.gif) no-repeat 0 0; width:13px; height:13px;}
+.accordionrhs h3 table.grboxrgt1 tr td{  font:12px arial; color:#000;  text-align:left; padding:0px ; }
+.borbltb{border-bottom: solid 1px #d8ecef; border-top: solid 1px #d8ecef;}
+.txt_inp01{background:url(images/sltbg.gif) repeat-x top;  border:solid 1px #fff; width:146px;}
+
+/*added by sanjay*/
+.pag{font:10px Arial; color:#848484; text-transform:uppercase; border-bottom:solid 1px #e5e5e5;}
+.pag span{color:#000;}
+.bllft{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/bllft.jpg) no-repeat left; width:7px; height:193px;}
+.blrgt{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/blrgt.jpg) no-repeat right; width:7px; height:193px;}
+.blmld{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/blmld.jpg) repeat-x; width:951px; height:193px;}
+.gr50{font:bold 50px Helvetica; color:#befb2d;text-transform:uppercase;}
+.gr25{font:25px arial; color:#befb2d;}
+.w_35{font:35px arial; color:#fff;}
+.w_16{font:16px arial; color:#fff;}
+.w_15{font:15px arial; color:#fff;}
+.w_11{font:11px arial; color:#fff;}
+.brdrt{border-right:solid 1px #4d5557}
+.brdgry{ border:solid 1px #c4c4c4;}
+.grtp{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/grtp.gif) no-repeat bottom; width:600px; height:7px; line-height:0px; font-size:0px;}
+.grmld{width:600px;}
+.grmld table tr th{ border-bottom:solid 1px #7fc68e; background-color:#c3f7a9; padding:3px 5px 8px 20px; text-align:left; text-transform:uppercase; font:bold 12px arial; color:#000}
+.grmld table tr tD{ border-bottom:solid 1px #fff; background-color:#d7faff; padding:4px 5px 4px 20px;}
+.grbtm{background:url(http://img1.moneycontrol.com/images/moneybhai_2010/grbtm.gif) repeat-x top; width:600px; height:6px;line-height:0px; font-size:0px;}
+.bgreg{ border:solid 1px #bdbcbd; width:600px; background: url(http://img1.moneycontrol.com/images/moneybhai_2010/regbg.gif) bottom repeat-x; }
+.bgreg table tr td{ padding:3px; }
+.txtinp{border:solid 1px #dfdfdf; width:300px; background:#ededed url(http://img1.moneycontrol.com/images/moneybhai_2010/txtbg.gif) bottom repeat-x; padding:8px 5px; }

@@ -1,0 +1,28 @@
+﻿/* CSS layout */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#masthead {
+}
+
+#top_nav {
+}
+
+#container {
+	min-width: 600px;
+}
+
+#right_col {
+	width: 300px;
+	float: right;
+}
+
+#page_content {
+	margin-right: 300px;
+}
+
+#footer {
+	clear: both;
+}
